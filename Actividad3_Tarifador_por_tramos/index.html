@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 3. Tarifador por tramos</title>
+  <script type="module" src="./app.js"></script>
+  <link rel="icon" href="data:,">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 2rem auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.4rem;
+      margin-top: 0.3rem;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tarifador por tramos</h1>
+
+  <form id="formulario">
+    <label>Consumo (unidades)
+      <input type="text" id="consumo">
+    </label>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <h2>Resultado</h2>
+  <p id="importe"></p>
+  <pre id="salida"></pre>
+</body>
+</html>
