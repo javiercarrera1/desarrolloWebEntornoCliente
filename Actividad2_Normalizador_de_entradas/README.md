@@ -1,6 +1,6 @@
 # Actividad 2. Normalizador de entradas
 
-## Descripción ✏️
+## Descripción
 
 Función `normalizarParticipante` que recibe los datos de un formulario de
 inscripción (nombre, edad escrita como texto y aceptación de normas), los
@@ -55,7 +55,7 @@ los argumentos no sean del tipo esperado.
 | `edadTexto` | Una vez convertida, entre 14 y 99 (ambos incluidos) | La edad debe estar entre 14 y 99 |
 | `aceptaNormas` | Valor de tipo booleano (`true` o `false`) | Debes indicar true o false en la aceptación |
 
-## Decisiones de diseño ✏️
+## Decisiones de diseño
 
 - **Limpiar antes de validar:** se aplica `trim()` y después se comprueba, para que `"   "` cuente como vacío.
 - **Validar la forma antes de convertir:** `Number("")` da `0` y `Number("0x1F")` da `31`. Por eso primero se comprueba con la expresión regular `/^\d+$/` y solo después se usa `Number()`.
@@ -64,7 +64,7 @@ los argumentos no sean del tipo esperado.
 - **Ceros a la izquierda:** `"017"` se acepta y se convierte en `17`.
 - **Signos y decimales:** `"-5"`, `"+5"` y `"17.5"` se rechazan como "no es un número entero".
 
-## Ámbitos ✏️
+## Ámbitos
 
 - `normalizarParticipante` está en su propio módulo y se comparte con `export`; `app.js` y `pruebas.js` la importan.
 - Dentro de la función, `errores`, `nombreLimpio` y `edadLimpia` son `const`. `edad` es `let` porque recibe su valor más tarde, dentro del `else`, y se necesita fuera de ese bloque para el `return` final.
