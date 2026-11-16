@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 4. Analizador de rondas</title>
+  <script type="module" src="./app.js"></script>
+  <link rel="icon" href="data:,">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 2rem auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.4rem;
+      margin-top: 0.3rem;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Analizador de rondas</h1>
+
+  <form id="formulario">
+    <label>Puntuaciones separadas por comas
+      <input type="text" id="puntuaciones" placeholder="10, 7, -2, NaN, 5">
+    </label>
+
+    <button type="submit">Analizar</button>
+  </form>
+
+  <h2>Resultado</h2>
+  <pre id="salida"></pre>
+  <p id="comparacion"></p>
+</body>
+</html>
