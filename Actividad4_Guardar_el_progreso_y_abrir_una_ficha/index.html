@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad 4. Guardar el progreso y abrir una ficha</title>
+  <link rel="icon" href="data:,">
+  <script type="module" src="./app.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 2rem auto; }
+    article, #ficha-local { border: 2px solid #999; padding: 1rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Registros</h1>
+    <nav aria-label="Registros">
+      <button id="ver-r1" type="button">Ver r1</button>
+      <button id="ver-r2" type="button">Ver r2</button>
+      <button id="ver-r3" type="button">Ver r3</button>
+      <button id="ver-r4" type="button">Ver r4</button>
+    </nav>
+    <article>
+      <h2 id="titulo"></h2>
+      <p id="texto"></p>
+      <p id="vistos"></p>
+    </article>
+    <p id="aviso" role="status"></p>
+    <button id="abrir-ficha" type="button">Ver ficha</button>
+    <section id="ficha-local" hidden>
+      <h2>Ficha del registro</h2>
+      <p id="ficha-texto"></p>
+    </section>
+  </main>
+</body>
+</html>
